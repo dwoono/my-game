@@ -58,10 +58,10 @@
     let moveLeft = false, moveRight = false;
     const worldPos = new THREE.Vector3();
 
-    // 이미지 로딩 (깃허브 폴더에 이미지 파일이 있어야 함)
+    // 외부 데이터가 아닌, 같은 폴더의 파일을 직접 불러오도록 수정
     const loader = new THREE.TextureLoader();
-    const pTex = loader.load("image_3.png"); 
-    const bTex = loader.load("image_4.png");
+    const pTex = loader.load('image_3.png'); 
+    const bTex = loader.load('image_4.png');
 
     const stageConfigs = {
         1: { speed: 0.4, bossHP: 40000, enemyHP: 1000 },
@@ -272,4 +272,5 @@
 </script>
 
 </body>
+
 </html>
